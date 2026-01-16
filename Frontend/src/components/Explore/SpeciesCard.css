@@ -1,0 +1,37 @@
+.species-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.species-wrap.species-wrap-top {
+    z-index: 3;
+}
+
+.bobber {
+    display: inline-block;
+    animation: bob 2.6s ease-in-out infinite;
+    will-change: transform;
+    position: relative;
+}
+
+.bobber.bobber-paused {
+    animation: none;
+}
+
+.species-img {
+    display: block;
+    transform-origin: center;
+    transform: scale(1);
+    transition: transform 300ms ease-out;
+    will-change: transform;
+}
+
+.species-img-zoomed {
+    transform: scale(1.2);
+}
+
+@keyframes bob {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0px); }
+}

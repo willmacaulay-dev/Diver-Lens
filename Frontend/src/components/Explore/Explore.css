@@ -1,0 +1,11 @@
+html {
+	scrollbar-width: auto;
+	scrollbar-color: rgba(255, 255, 255, 1) transparent;
+
+}
+
+html, body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: auto;
+}
